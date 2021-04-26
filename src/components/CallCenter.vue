@@ -24,30 +24,30 @@
 		<div class="col-12 col-md-6">								
 			<div class="row">
 				<div class="col-12 col-md-4 q-mt-lg">
-					<p class="callsText"> {{ apiCallCenter[0].totalcalls }} </p>
+					<p class="callsText"> {{ Intl.NumberFormat().format(apiCallCenter[0].totalcalls) }} </p>
 					<p class="callsNames">Общее количество звонков</p>
 				</div>
 				<div class="col-12 col-md-4 q-mt-lg">
-					<p class="callsText"> {{ apiCallCenter[0].totalleads }} </p>
+					<p class="callsText"> {{ Intl.NumberFormat().format(apiCallCenter[0].totalleads) }} </p>
 					<p class="callsNames"> Общее количество лидов </p>
 				</div>
 	    		<div class="col-12 col-md-4 q-mt-lg">
-		    		<p class="callsText" > {{ apiCallCenter[0].totalgreenzone }} </p>
+		    		<p class="callsText" > {{ Intl.NumberFormat().format(apiCallCenter[0].totalgreenzone) }} </p>
 						<p class="callsNames">Передано в зеленую зону</p>
 					</div>
 					<div class="col-12 col-md-12 q-mt-lg">
 						<p class="totalFont">Всего</p>
 					</div>
 					<div class="col-md-4 q-mt-lg">
-						<p class="totalCall callsText"> {{ apiCallCenter[1].totalcalls }} </p> 
+						<p class="totalCall callsText"> {{ Intl.NumberFormat().format(apiCallCenter[1].totalcalls) }} </p> 
 						<p class="callsNames">Общее количество звонков</p>
 					</div>
 					<div class="col-md-4 q-mt-lg">
-						<p class="totalCall callsText"> {{ apiCallCenter[1].totalleads }} </p>
+						<p class="totalCall callsText"> {{ Intl.NumberFormat().format(apiCallCenter[1].totalleads) }} </p>
 						<p class="callsNames">Общее количество лидов</p>
 					</div>
 					<div class="col-md-4 q-mt-lg">
-						<p class="totalCall callsText"> {{ apiCallCenter[1].totalgreenzone }} </p>
+						<p class="totalCall callsText"> {{ Intl.NumberFormat().format(apiCallCenter[1].totalgreenzone) }} </p>
 						<p class="callsNames">Передано в зеленую зону</p>
 					</div>
 				</div>
@@ -58,19 +58,19 @@
 						<p class="callsNames">Добавление в реестры и официальный перечень площадок субсидий</p>
 					</div>
 					<div class="col-6 q-mt-lg">
-						<p class="callsText"> {{ apiCallCenter[2].mik_participants }} </p>
+						<p class="callsText"> {{ Intl.NumberFormat().format(apiCallCenter[2].mik_participants) }} </p>
 						<p class="callsNames">Участники МИК</p>
 					</div>
 					<div class="col-6 q-mt-lg">
-						<p class="callsText"> {{ apiCallCenter[2].reestr_soc }} </p>
+						<p class="callsText"> {{ Intl.NumberFormat().format(apiCallCenter[2].reestr_soc) }} </p>
 						<p class="callsNames">Заявки на вступление в реестр соц.предприятий</p>
 					</div>
 					<div class="col-6 q-mt-lg">
-						<p class="callsText"> {{ apiCallCenter[2].list_ploshadki }} </p>
+						<p class="callsText"> {{ Intl.NumberFormat().format(apiCallCenter[2].list_ploshadki) }} </p>
 						<p class="callsNames">Заявки на добавление в список площадок</p>
 					</div>
 					<div class="col-6 q-mt-lg font-arial">
-						<p class="callsText"> {{ apiCallCenter[2].req_approved }} </p>
+						<p class="callsText"> {{ Intl.NumberFormat().format(apiCallCenter[2].req_approved) }} </p>
 						<p class="callsNames">Одобрено заявок</p>
 					</div>
 				</div>
@@ -117,8 +117,8 @@
             this.date = val;
             this.fullLink = this.link + this.date;
             axios
-            .get(this.fullLink)
-            .then(response => (this.apiCallCenter[0] = response.data));
+			.get(this.fullLink)
+			.then(response => (this.apiCallCenter[0] = response.data));
         }
     }
   }

@@ -3,11 +3,11 @@
 	  <div class="col q-mt-lg">
 		  <div class = "borderrig">
 				<p class="queriesName">Заявки в Департаменте</p>
-				<p class="queriesText"> {{ apiData[0].totalcount }} </p>
-				<p class="queriesText" style="margin-bottom: 40%;"> {{ apiData[0].totalsum }} млн</p>
+				<p class="queriesText"> {{ Intl.NumberFormat().format(apiData[0].totalcount) }} </p>
+				<p class="queriesText" style="margin-bottom: 40%;"> {{ Intl.NumberFormat().format(apiData[0].totalsum) }} млн</p>
 					
 				<p class="queriesName">Готовят документы </p>
-				<p class="queriesText"> {{ apiData[1].totalcount }} </p>
+				<p class="queriesText"> {{ Intl.NumberFormat().format(apiData[1].totalcount) }} </p>
 				<p class="queriesText">предпринимателей</p>
 			</div>
 		</div>
