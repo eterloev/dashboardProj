@@ -14,28 +14,28 @@
 							<tbody>
 								<tr class="">
 									<td class="text-left my-special-class"> {{ apiQueries[0][0].pipename.replace(/\d+\. /i ,'') }} </td>
-									<td class="text-left"> {{ Intl.NumberFormat().format(apiQueries[0][0].total_budget) }} </td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][0].amount) }} </td>
+									<td class="text-left"> {{ Intl.NumberFormat('ru-RU').format(apiQueries[0][0].total_budget) }} </td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][0].amount) }} </td>
 								</tr>
 								<tr class="">
 									<td class="text-left my-special-class">{{ apiQueries[0][1].pipename.replace(/\d+\. /i ,'') }}</td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][1].total_budget) }}</td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][1].amount) }}</td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][1].total_budget) }}</td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][1].amount) }}</td>
 								</tr>
 								<tr class="">
 									<td class="text-left my-special-class">{{ apiQueries[0][2].pipename.replace(/\d+\. /i ,'') }}</td>
-									<td class="text-left">{{  Intl.NumberFormat().format(apiQueries[0][2].total_budget) }}</td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][2].amount) }}</td>
+									<td class="text-left">{{  Intl.NumberFormat('ru-RU').format(apiQueries[0][2].total_budget) }}</td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][2].amount) }}</td>
 							</tr>
 							<tr class="">
 									<td class="text-left my-special-class">{{ apiQueries[0][3].pipename.replace(/\d+\. /i ,'') }}</td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][3].total_budget) }}</td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][3].amount) }}</td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][3].total_budget) }}</td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][3].amount) }}</td>
 								</tr>
 								<tr class="">
 									<td class="text-left my-special-class">{{ apiQueries[0][4].pipename.replace(/\d+\. /i ,'') }}</td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][4].total_budget) }}</td>
-									<td class="text-left">{{ Intl.NumberFormat().format(apiQueries[0][4].amount) }}</td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][4].total_budget) }}</td>
+									<td class="text-left">{{ Intl.NumberFormat('ru-RU').format(apiQueries[0][4].amount) }}</td>
 								</tr>
 							</tbody>
 						</table>
@@ -55,23 +55,23 @@
 							<tbody>
 								<tr class="">
 									<td class="text-left"> {{ apiQueries[1][0].pipename.replace(/\d+\. /i ,'')}} </td>
-									<td class="text-left"> {{ Intl.NumberFormat().format(apiQueries[1][0].totalcount) }} </td>
+									<td class="text-left"> {{ Intl.NumberFormat('ru-RU').format(apiQueries[1][0].totalcount) }} </td>
 								</tr>
 								<tr class="">
 									<td class="text-left"> {{ apiQueries[1][1].pipename.replace(/\d+\. /i ,'')}} </td>
-									<td class="text-left"> {{ Intl.NumberFormat().format(apiQueries[1][1].totalcount) }} </td>
+									<td class="text-left"> {{ Intl.NumberFormat('ru-RU').format(apiQueries[1][1].totalcount) }} </td>
 								</tr>
 								<tr class="">
 									<td class="text-left"> {{ apiQueries[1][2].pipename.replace(/\d+\. /i ,'')}} </td>
-									<td class="text-left"> {{ Intl.NumberFormat().format(apiQueries[1][2].totalcount) }} </td>
+									<td class="text-left"> {{ Intl.NumberFormat('ru-RU').format(apiQueries[1][2].totalcount) }} </td>
 								</tr>
 								<tr class="">
 									<td class="text-left"> {{ apiQueries[1][3].pipename.replace(/\d+\. /i ,'')}} </td>
-									<td class="text-left"> {{ Intl.NumberFormat().format(apiQueries[1][3].totalcount) }} </td>
+									<td class="text-left"> {{ Intl.NumberFormat('ru-RU').format(apiQueries[1][3].totalcount) }} </td>
 								</tr>
 								<tr class="">
 									<td class="text-left"> {{ apiQueries[1][4].pipename.replace(/\d+\. /i ,'')}} </td>
-									<td class="text-left"> {{ Intl.NumberFormat().format(apiQueries[1][4].totalcount) }} </td>
+									<td class="text-left"> {{ Intl.NumberFormat('ru-RU').format(apiQueries[1][4].totalcount) }} </td>
 								</tr>
 							</tbody>
 						</table>

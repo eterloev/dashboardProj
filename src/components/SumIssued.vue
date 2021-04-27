@@ -10,21 +10,21 @@
 				<div class="col q-mt-lg">
 					<div class="border_queries">
 						<p class="queriesName">Одобрено заявок</p>
-						<p class="queriesText"> {{apiData[0].totalcount}} </p>
-						<p class="queriesText"> {{apiData[0].totalsum}} млн</p>
+						<p class="queriesText"> {{Intl.NumberFormat('ru-RU').format(apiData[0].totalcount)}} </p>
+						<p class="queriesText"> {{Intl.NumberFormat('ru-RU').format(apiData[0].totalsum)}} млн</p>
 					</div>
 				</div>
 				
 				<div class="border_queries">
 					<p class="queriesName">Заключено соглашений</p>
-					<p class="queriesText"> {{ apiData[1].totalcount }} </p>
-					<p class="queriesText"> {{ apiData[1].totalsum }} млн</p>
+					<p class="queriesText"> {{ Intl.NumberFormat('ru-RU').format(apiData[1].totalcount) }} </p>
+					<p class="queriesText"> {{ Intl.NumberFormat('ru-RU').format(apiData[1].totalsum) }} млн</p>
 				</div>
 				
 				<div class="border_queries">
 					<p class="queriesName">Получили средства на счет</p>
-					<p class="queriesText"> {{ apiData[2].totalcount }} </p>
-					<p class="queriesText"> {{ apiData[2].totalsum }} млн</p>
+					<p class="queriesText"> {{ Intl.NumberFormat('ru-RU').format(apiData[2].totalcount) }} </p>
+					<p class="queriesText"> {{ Intl.NumberFormat('ru-RU').format(apiData[2].totalsum) }} млн</p>
 				</div>
 			</div>
 			<div class="col-12 col-md-8">
